@@ -1,8 +1,11 @@
 # Be sure to restart your server when you modify this file.
-
+Rails.application.config.assets.paths << Rails.root.join("node_modules")
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = "1.0"
-
+gem "autoprefixer-rails"
+gem "font-awesome-sass", "~> 6.1"
+gem "simple_form", github: "heartcombo/simple_form"
+gem "sassc-rails"
 # Add additional assets to the asset load path.
 # Rails.application.config.assets.paths << Emoji.images_path
 
